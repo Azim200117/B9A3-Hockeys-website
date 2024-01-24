@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- Css File LINK -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Daisy UI and Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind Custom Style -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'hockey-primary': '#FF4240',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .font-poppins {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+
+</head>
+
+<body class="font-poppins">
+  <!-- Header Section -->
+  <header class="w-full">
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0"
+              class="menu menu-sm text-base dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl lg:text-4xl">Hockey's</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-base">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn bg-hockey-primary text-white py-4 px-6">Get Ticket</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel Section -->
+    <div class="mx-auto container px-24 mt-8">
+      <div class="carousel w-full">
+        <!-- Slide 1 -->
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="Images/12.jpg" class="w-full rounded-s-2xl" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="Images/13.jpg" class="w-full rounded-s-2xl" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- Slide 4 -->
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="Images/14.jpg" class="w-full rounded-s-2xl" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <main class="md-container md:max-auto">
+    <!-- Featured Hockey Section -->
+    <section>
+
+      <div class="mt-9 text-center items-center">
+        <h3 class="text-2xl lg:text-3xl">Professional Hockeys Club</h3>
+        <p class="text-[16px] lg:text-xl">Best Hockey club on palnet Earth</p>
+      </div>
+
+      <div class="flex-row lg:flex ml-12 mt-2 text-center items-center align-middle gap-16 p-8">
+        <div class="mt-5 lg:mt-0">
+          <div class="radial-progress text-red-800" style="--value:87;" role="progressbar">87%</div>
+          <h3 class="mt-4">Prayer Facility</h3>
+          <p class="text-xs mt-4">We have 87% player facility <br> among to the club.</p>
+        </div>
+        <div class="mt-5 lg:mt-0">
+          <div class="radial-progress text-green-800" style="--value:95;" role="progressbar">95%</div>
+          <h3 class="mt-4">Experienced Coach</h3>
+          <p class="text-xs mt-4">We have 95% <br> experienced coach among to the club.</p>
+        </div>
+        <div class="mt-5 lg:mt-0">
+          <div class="radial-progress text-yellow-500" style="--value:90;" role="progressbar">90%</div>
+          <h3 class="mt-4">Senior Player</h3>
+          <p class="text-xs mt-4">We have 90% senior players <br> who palys for internationasl games among to the club.
+          </p>
+        </div>
+        <div class="mt-5 lg:mt-0">
+          <div class="radial-progress text-blue-700" style="--value:80;" role="progressbar">80%</div>
+          <h3 class="mt-4">Training Ground</h3>
+          <p class="text-xs mt-4">We have a great <br> training ground among to the club</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Program Section -->
+    <section>
+      <div class="mt-9 text-center items-center">
+        <h3 class="text-2xl lg:text-3xl">Program Sections</h3>
+        <p class="text-[16px] lg:text-xl">Best community in whole planet</p>
+      </div>
+      <div class="lg:flex gap-2 mt-5">
+        <div class="card w-fit bg-base-100 shadow-xl image-full ml-32 mt-5 lg:w-96">
+          <figure><img src="Images/2.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Junior Program</h2>
+            <p>Age 8-11 years old</p>
+            <div class="card-actions justify-end">
+              <button class="btn bg-hockey-primary text-white px-22">Register Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card w-fit bg-base-100 shadow-xl image-full ml-32 mt-5 lg:w-96">
+          <figure><img src="Images/3.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Teenager Program</h2>
+            <p>Age 12-17 years old</p>
+            <div class="card-actions justify-end">
+              <button class="btn bg-hockey-primary text-white px-22">Register Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mr-5">
+        <div class="card bg-base-100 shadow-xl image-full ml-32 mt-5 w-fit">
+          <figure><img src="Images/4.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Professional Program</h2>
+            <p>Age 18-29 years old</p>
+            <div class="card-actions justify-end">
+              <button class="btn bg-hockey-primary text-white px-22 ">Register Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+      <div class="mt-5">
+        <h3 class="text-2xl  mt-12 font-semibold text-center lg:text-5xl">Clients Question</h3>
+        <p class="text-2xl mt-4 font-semibold text-center mb-10 lg:text-2xl">Our clients questions</p>
+      </div>
+      <div>
+        <div class="hero min-h-screen bg-base-200">
+          <div class="hero-content flex-col lg:flex-row">
+            <img src="Images/11.png" class="max-w-sm rounded-lg shadow-2xl" />
+            <div>
+              <!-- 1st ques -->
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-xs lg:text-xl font-medium">
+                  Our Equipment
+                </div>
+                <div class="collapse-content">
+                  <p class="text-xs lg:text-xl">Our equipment: not fancy, but faithful. Wrenches etched with calloused
+                    stories, drills humming familiar lullabies. Laptops glowing late, pixels blurring into dreams.
+                    Cameras capturing sun-kissed moments, microphones whispering unheard tales. Tools, not trophies,
+                    bearing the scars of creation, the whispers of a thousand triumphs. In their worn grips, the echoes
+                    of possibility.</p>
+                </div>
+              </div>
+              <!-- 2nd ques -->
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="text-xs collapse-title lg:text-xl font-medium">
+                  Hockey Training
+                </div>
+                <div class="collapse-content">
+                  <p class="lg:text-xl">Hockey training is essential for players of all levels to improve their skills,
+                    stamina, and teamwork. A typical training session will include skating drills, shooting practice,
+                    passing drills, and scrimmages. Players will also work on their strength, conditioning, and
+                    flexibility.</p>
+                </div>
+              </div>
+              <!-- 3rd ques -->
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xs lg:text-xl font-medium">
+                  Private Lessons
+                </div>
+                <div class="collapse-content">
+                  <p class="text-xs lg:text-xl">A student receives one-on-one tutoring to master a subject, overcoming
+                    challenges in a personalized setting.Aspiring artists, musicians, athletes, or dancers dedicate
+                    themselves to focused training under a renowned mentor. A hidden teacher imparts forbidden knowledge
+                    or unconventional wisdom, shaping a student's destiny in the shadows.</p>
+                </div>
+              </div>
+              <!-- 4th question -->
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xs lg:text-xl font-medium">
+                  Ski Touring
+                </div>
+                <div class="collapse-content">
+                  <p class="text-xs lg:text-xl">Ski touring is an exhilarating winter sport that combines the thrill of
+                    downhill skiing with the adventure of backcountry exploration. Imagine gliding through pristine
+                    powder meadows, your breath misting in the crisp air, as you scale snow-capped peaks. Then, feel the
+                    rush of adrenaline as you carve your own tracks down untouched slopes, leaving worries and crowds
+                    behind. It's a physical challenge, rewarding you with breathtaking panoramas and a deep connection
+                    to nature. So ditch the lift lines and embrace the quiet solitude of the backcountry – ski touring
+                    awaits! </p>
+                </div>
+              </div>
+              <!-- 5th question -->
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xs lg:text-xl font-medium">
+                  Booking
+                </div>
+                <div class="collapse-content">
+                  <p class="text-xs lg:text-xl">Booking is the act of reserving or securing something for future use.
+                    This can be anything from a movie ticket to a hotel room to a flight. Bookings are usually made in
+                    advance, and they can be confirmed with a payment or deposit. Once a booking is confirmed, the
+                    person who made the booking has the right to use the service or item at the agreed-upon time.</p>
+                </div>
+              </div>
+              <!-- 6th question -->
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xs lg:text-xl font-medium">
+                  Pricings
+                </div>
+                <div class="collapse-content">
+                  <p class="text-xs  lg:text-xl">Pricing is the process of setting the price of a good or service. It is
+                    one of the most important decisions a business makes, as it can affect everything from profitability
+                    to market share. There are many factors to consider when setting prices, such as the cost of
+                    production, the competition, and the target market. Businesses must also decide whether to use a
+                    cost-based, value-based, or competition-based pricing strategy.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+
+</html>
