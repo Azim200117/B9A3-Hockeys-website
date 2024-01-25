@@ -26,6 +26,10 @@
           colors: {
             clifford: '#da373d',
             'hockey-primary': '#FF4240',
+            'footer-bg': '#131318',
+            'card-bg': '#BCED6D1A',
+            'email-bg': '#FDDD5F1A',
+            'social-bg': '#13131808',
           }
         }
       }
@@ -74,13 +78,14 @@
           </ul>
         </div>
         <div class="navbar-end">
+          <img src="Images/magnifying-glass.png" alt="" width="14%">
           <a class="btn bg-hockey-primary text-white py-4 px-6">Get Ticket</a>
         </div>
       </div>
     </nav>
 
     <!-- Carousel Section -->
-    <div class="mx-auto container px-24 mt-8">
+    <div class="mx-auto container lg:px-24 mt-8">
       <div class="carousel w-full">
         <!-- Slide 1 -->
         <div id="slide1" class="carousel-item relative w-full">
@@ -160,23 +165,24 @@
         <p class="text-[16px] lg:text-xl">Best community in whole planet</p>
       </div>
       <div class="lg:flex gap-2 mt-5">
-        <div class="card w-fit bg-base-100 shadow-xl image-full ml-32 mt-5 lg:w-96">
-          <figure><img src="Images/2.png" alt="Shoes" /></figure>
-          <div class="card-body">
-            <h2 class="card-title">Junior Program</h2>
-            <p>Age 8-11 years old</p>
-            <div class="card-actions justify-end">
+        <div class="card  h-[244px] bg-cover mt-5 lg:w-full bg-[url('Images/2.png')]">
+
+          <!-- <figure class="w-full"><img src="Images/2.png" alt="Shoes" class="w-full"/></figure> -->
+          <div class="card-body inline-block  ml-5 text-white">
+            <h2 class="card-title text-xl lg:text-2xl ">Junior Program</h2>
+            <p class="text-xs lg:text-xl">Age 8-11 years old</p>
+            <div class="card-actions justify-start mt-5">
               <button class="btn bg-hockey-primary text-white px-22">Register Now</button>
             </div>
           </div>
         </div>
 
-        <div class="card w-fit bg-base-100 shadow-xl image-full ml-32 mt-5 lg:w-96">
-          <figure><img src="Images/3.png" alt="Shoes" /></figure>
-          <div class="card-body">
-            <h2 class="card-title">Teenager Program</h2>
-            <p>Age 12-17 years old</p>
-            <div class="card-actions justify-end">
+        <div class="card  h-[244px] bg-cover mt-6 lg:w-full bg-[url('Images/3.png')]">
+          <!-- <figure><img src="Images/3.png" alt="Shoes" /></figure> -->
+          <div class="card-body inline-block  ml-5 text-white">
+            <h2 class="card-title text-xl lg:text-2xl">Teenager Program</h2>
+            <p class="text-xs lg:text-xl">Age 12-17 years</p>
+            <div class="card-actions justify-start mt-5">
               <button class="btn bg-hockey-primary text-white px-22">Register Now</button>
             </div>
           </div>
@@ -184,13 +190,133 @@
       </div>
 
       <div class="mr-5">
-        <div class="card bg-base-100 shadow-xl image-full ml-32 mt-5 w-fit">
-          <figure><img src="Images/4.png" alt="Shoes" /></figure>
+        <div class="card h-[244px] bg-cover mt-6 lg:w-full bg-[url('Images/4.png')]">
+          <!-- <figure><img src="Images/4.png" alt="Shoes" /></figure> -->
+          <div class="card-body inline-block text-white">
+            <h2 class="card-title text-xl lg:text-2xl">Professional Program</h2>
+            <p class="text-xs lg:text-xl">Age 18-29 years old</p>
+            <div class="card-actions justify-start mt-10">
+              <button class="btn bg-hockey-primary text-white px-22">Register Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Section -->
+    <div class="mt-9 text-center items-center">
+      <h3 class="text-2xl lg:text-3xl">Product Sections</h3>
+      <p class="text-[16px] lg:text-xl">Introduce our products</p>
+    </div>
+    <section class=" flex justify-center items-center flex-col  md:flex-row align-middle">
+      <!-- 1st product -->
+      <div class="mt-10 ml-[122px]">
+        <div class="card w-80 bg-base-100 shadow-xl">
+          <figure><img src="Images/5.png" alt="Shoes" /></figure>
           <div class="card-body">
-            <h2 class="card-title">Professional Program</h2>
-            <p>Age 18-29 years old</p>
+            <h2 class="card-title">
+              Jersey
+              <div class="badge badge-secondary p-3 mr-5">Free Delivery</div>
+            </h2>
+            <p>LA Galaxy Hockey Jersey</p>
             <div class="card-actions justify-end">
-              <button class="btn bg-hockey-primary text-white px-22 ">Register Now</button>
+              <div class="badge badge-outline">Price-22$</div>
+              <div class="badge badge-outline">5 star product</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2nd product -->
+      <div class="mt-10 ml-32">
+        <div class="card w-80 bg-base-100 shadow-xl">
+          <figure><img src="Images/6.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              Flag
+              <div class="badge badge-secondary p-3 mr-5">Free Delivery</div>
+            </h2>
+            <p>Lutton City Flag</p>
+            <div class="card-actions justify-end">
+              <div class="badge badge-outline">Price-22$</div>
+              <div class="badge badge-outline">5 star product</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="  flex justify-center items-center flex-col  md:flex-row align-middle"">
+         <!-- 3rd product -->
+        <div class=" mt-10 ml-32">
+      <div class="card w-80 bg-base-100 shadow-xl">
+        <figure><img src="Images/7.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Cap
+            <div class="badge badge-secondary p-3 mr-5">Free Delivery</div>
+          </h2>
+          <p>Hockey Cap</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Price-22$</div>
+            <div class="badge badge-outline">5 star product</div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- 4th product -->
+      <div class="mt-10 ml-32">
+        <div class="card w-80 bg-base-100 shadow-xl">
+          <figure><img src="Images/8.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              Jersey
+              <div class="badge badge-secondary p-3 mr-5">Free Delivery</div>
+            </h2>
+            <p>Dortmund Jersey</p>
+            <div class="card-actions justify-end">
+              <div class="badge badge-outline">Price-22$</div>
+              <div class="badge badge-outline">5 star product</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+
+    <section class="  flex justify-center items-center flex-col  md:flex-row align-middle"">
+       <!-- 5th product -->
+      <div class=" mt-10 ml-32">
+      <div class="card w-80 bg-base-100 shadow-xl">
+        <figure><img src="Images/9.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Helmet
+            <div class="badge badge-secondary p-3 mr-5">Free Delivery</div>
+          </h2>
+          <p>Hockey Helmet</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Price-22$</div>
+            <div class="badge badge-outline">5 star product</div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- 6th product -->
+      <div class="mt-10 ml-32">
+        <div class="card w-80 bg-base-100 shadow-xl">
+          <figure><img src="Images/10.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              Badge
+              <div class="badge badge-secondary p-3 mr-5">Free Delivery</div>
+            </h2>
+            <p>Hockey bardge</p>
+            <div class="card-actions justify-end">
+              <div class="badge badge-outline">Price-22$</div>
+              <div class="badge badge-outline">5 star product</div>
             </div>
           </div>
         </div>
@@ -204,14 +330,14 @@
         <p class="text-2xl mt-4 font-semibold text-center mb-10 lg:text-2xl">Our clients questions</p>
       </div>
       <div>
-        <div class="hero min-h-screen bg-base-200">
+        <div class="hero min-h-screen">
           <div class="hero-content flex-col lg:flex-row">
-            <img src="Images/11.png" class="max-w-sm rounded-lg shadow-2xl" />
+            <img src="Images/11.png" class="max-w-sm rounded-lg " />
             <div>
               <!-- 1st ques -->
               <div class="collapse collapse-plus bg-base-200">
                 <input type="radio" name="my-accordion-3" checked="checked" />
-                <div class="collapse-title text-xs lg:text-xl font-medium">
+                <div class="collapse-title text-xs lg:text-xl font-medium mb-5">
                   Our Equipment
                 </div>
                 <div class="collapse-content">
@@ -221,6 +347,7 @@
                     bearing the scars of creation, the whispers of a thousand triumphs. In their worn grips, the echoes
                     of possibility.</p>
                 </div>
+                <hr>
               </div>
               <!-- 2nd ques -->
               <div class="collapse collapse-plus bg-base-200">
@@ -234,6 +361,7 @@
                     passing drills, and scrimmages. Players will also work on their strength, conditioning, and
                     flexibility.</p>
                 </div>
+                <hr>
               </div>
               <!-- 3rd ques -->
               <div class="collapse collapse-plus bg-base-200">
@@ -247,6 +375,7 @@
                     themselves to focused training under a renowned mentor. A hidden teacher imparts forbidden knowledge
                     or unconventional wisdom, shaping a student's destiny in the shadows.</p>
                 </div>
+                <hr>
               </div>
               <!-- 4th question -->
               <div class="collapse collapse-plus bg-base-200">
@@ -263,6 +392,7 @@
                     to nature. So ditch the lift lines and embrace the quiet solitude of the backcountry – ski touring
                     awaits! </p>
                 </div>
+                <hr>
               </div>
               <!-- 5th question -->
               <div class="collapse collapse-plus bg-base-200">
@@ -276,6 +406,7 @@
                     advance, and they can be confirmed with a payment or deposit. Once a booking is confirmed, the
                     person who made the booking has the right to use the service or item at the agreed-upon time.</p>
                 </div>
+                <hr>
               </div>
               <!-- 6th question -->
               <div class="collapse collapse-plus bg-base-200">
@@ -290,6 +421,7 @@
                     production, the competition, and the target market. Businesses must also decide whether to use a
                     cost-based, value-based, or competition-based pricing strategy.</p>
                 </div>
+                <hr>
               </div>
             </div>
           </div>
@@ -297,10 +429,147 @@
       </div>
     </section>
 
+
+    <!-- Contact Section -->
+    <section>
+      <div class="text-center text-3xl mt-10 mb-10"">
+        <h3>Get In Touch</h3>
+        <p class=" text-xl">Contact US</p>
+      </div>
+
+      <div class="flex gap-72">
+        <div class="flex flex-col">
+          <div class="p-10 bg-card-bg w-60 h-60 ml-5 rounded-2xl mb-5">
+            <img src="Images/Group 1171275317.png" alt="" class="mb-5">
+            <p class="text-xs">Phone Number :
+              <br>
+              (+62) 123-321-543
+            </p>
+          </div>
+
+          <div class="p-10 bg-email-bg w-60 h-60 ml-5 rounded-2xl mb-5">
+            <img src="Images/Group 1171275318.png" alt="" class="mb-5">
+            <p class="text-xs">Email :
+              <br>
+              hockeys@sup.com3
+            </p>
+          </div>
+
+
+          <div class="p-10 bg-card-bg w-60 h-60 ml-5 rounded-2xl mb-5">
+            <img src="Images/Group 1171275321.png" alt="" class="mb-5 ">
+            <p class="text-xs">Address :
+              <br>
+              152/1 Mohakhali Wireless Gate
+            </p>
+          </div>
+
+        </div>
+        <form action="#" method="post">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="flex flex-col sm:grid-cols-1">
+              <label for="name" class="mb-2 text-sm font-medium text-gray-700">Your Name</label>
+              <input type="text" id="name"
+                class="shadow-sm bg-gray-50 border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:ring-indigo-500 focus:ring-opacity-50 w-[224px] h-[64px]"
+                required>
+            </div>
+            <div class="flex flex-col">
+              <label for="email" class="mb-2 text-sm font-medium text-gray-700">Your Email</label>
+              <input type="email" id="email"
+                class="shadow-sm bg-gray-50 border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:ring-indigo-500 focus:ring-opacity-50 w-[224px] h-[64px]"
+                required>
+            </div>
+            <div class="flex flex-col">
+              <label for="subject" class="mb-2 text-sm font-medium text-gray-700">Subject</label>
+              <input type="text" id="subject"
+                class="shadow-sm bg-gray-50 border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:ring-indigo-500 focus:ring-opacity-50 w-[224px] h-[64px]">
+            </div>
+            <div class="flex flex-col">
+              <label for="phone" class="mb-2 text-sm font-medium text-gray-700">Phone Number (Optional)</label>
+              <input type="tel" id="phone"
+                class="shadow-sm bg-gray-50 border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:ring-indigo-500 focus:ring-opacity-50 w-[224px] h-[64px]">
+            </div>
+          </div>
+          <div class="mt-4">
+            <label for="message" class="mt-5 text-sm font-medium text-gray-700">Message</label>
+            <textarea id="message" rows="4"
+              class="shadow-sm bg-gray-50 border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:ring-indigo-500 focus:ring-opacity-50 w-[650px] h-[370px] mr-10"
+              required></textarea>
+          </div>
+          <div class="flex justify-end mt-4">
+            <button type="submit"
+              class="inline-flex items-center text-center px-24 py-5 text-base font-medium text-white bg-hockey-primary border border-transparent rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 w-500 h-100 justify-center mr-60">Send
+              Message</button>
+          </div>
+        </form>
+
+      </div>
+
+      <div class="bg-social-bg items-center justify-center text-center p-16">
+        <div>
+          <h3 class="font-semibold ">Social Media</h3>
+        </div>
+        <div class="mt-9 ">
+          <center>
+            <img src="Images/Social.png" alt="">
+          </center>
+        </div>
+      </div>
+
+    </section>
+
+
   </main>
 
-  <footer>
+  <footer class="bg-footer-bg text-white flex gap-2 ">
+    <div class="p-12 mt-4">
+      <h1 class="text-4xl">Get In Touch</h1>
+      <p class="text-xl mt-4">Gulsan-1 Dhaka Bnagladesh</p>
+      <div class="inline-flex mt-4 gap-2">
+        <img src="Images/Frame.png" alt="">
+        <p class="text-xl">anowarulazim2012@gamil.com</p>
+      </div>
+      <br>
+      <div class="inline-flex mt-4 gap-2">
+        <img src="Images/phone.png" alt="">
+        <p class="text-xl">01713003906</p>
+      </div>
+    </div>
 
+    <div class="p-12 mt-2 flex sm:flex-col">
+      <h3 class="mb-5 text-2xl">Company</h3>
+      <p>About Us</p>
+      <p class="mt-4 text-[14px]">Leadership</p>
+      <p class="mt-4 text-[14px]">Carrers</p>
+      <p class="mt-4 text-[14px]">News&Article</p>
+      <p class="mt-4 text-[14px]">Legal Notice</p>
+    </div>
+
+    <div class="p-12 mt-2">
+      <h3 class="mb-5 text-2xl">Support</h3>
+      <p>Help Center</p>
+      <p class="mt-4 text-[14px]">FAQ</p>
+      <p class="mt-4 text-[14px]">Ticket Support</p>
+      <p class="mt-4 text-[14px]">Contact US</p>
+    </div>
+
+    <div class="p-12 mt-2">
+      <h3 class="mb-5 text-2xl">Company</h3>
+      <p>About Us</p>
+      <p class="mt-4 text-[14px]">Leadership</p>
+      <p class="mt-4 text-[14px]">Carrers</p>
+      <p class="mt-4 text-[14px]">News&Article</p>
+      <p class="mt-4 text-[14px]">Legal Notice</p>
+    </div>
+
+    <div class="p-12 mt-2">
+      <h3 class="mb-5 text-2xl">Services</h3>
+      <p>Academy</p>
+      <p class="mt-4 text-[14px]">Group Lesson</p>
+      <p class="mt-4 text-[14px]">Provet Lesson</p>
+      <p class="mt-4 text-[14px]">Holiday for kids</p>
+      <p class="mt-4 text-[14px]">Holiday for Adults</p>
+    </div>
   </footer>
 </body>
 
